@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="px-10 mb-8 lg:mt-[10rem] space-y-3 ">
+        <h4 class="text-2xl md:text-3xl font-medium text-gray-900 ">For Any Occasion</h4>
+        <p class="text-gray-500 mt-1 ">From Jeans to Eyewear, Find The Fashion Piece That Accentuates Your Favourite Parts of Yourself</p>
+        <button class=" text-white mt-2 px-8 py-1 font-light rounded-lg hover:bg-gray-700 transition" style="background-color: rgba(34, 39, 42, 1);">Visit Marketpalce</button>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-20 p-10">
+        <!-- Repeat this block for each image -->
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid1.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute  -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               Jeans
+            </button>
+        </div>
+
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid2.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               Shoes
+            </button>
+        </div>
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid3.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               bags
+            </button>
+        </div>
+
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid4.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               Eyewear
+            </button>
+        </div>
+
+        <!-- Row 2 -->
+
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid2.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               Shoes
+            </button>
+        </div>
+
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid1.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute  -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               Jeans
+            </button>
+        </div>
+
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid4.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               Eyewear
+            </button>
+        </div>
+
+        <div class="relative flex flex-col items-center bg-white shadow-lg rounded-lg">
+            <img src="images/grid3.png" alt="Image" class="w-full object-cover rounded-lg">
+            
+            <!-- Button overlapping bottom border -->
+            <button class="absolute -bottom-5 bg-white/30 backdrop-blur-md text-dark-1000 px-20 py-2 rounded-lg shadow-md">
+               bags
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

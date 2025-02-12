@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENESS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body::-webkit-scrollbar {
+        font-family: Arial, Helvetica, sans-serif;
+        display: none; /* Hides scrollbar for Chrome, Safari */
+    }
+        .glass {
+            background: rgba(252, 247, 243, 0.2);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        @keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  25%{background-position: 50% 75%;}
+  50% { background-position: 100% 75%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #3490dc, #ffed4a, #bb6461, #6f42c1, #0dcaf0);
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s ease infinite;
+  backdrop-filter: blur(10px);
+}
+
+    </style>
+</head>
+<body style="background-color: rgba(252, 247, 243, 1);">
+    <!-- <script src="script.js"></script> -->
+    <div class="bg-white/30 glass relative">
+    <div id="navbar"></div>
+
+        
+           <!-- Navbar with Glassmorphism -->
+
+     <!-- Background Video -->
+     <video class="absolute top-0 left-0 w-full h-full object-cover blur-3xl -z-10" autoplay loop muted>
+        <source src="head_vid.mp4" type="video/mp4">
+    </video>
+
+    <!-- Foreground Video Section -->
+    <div class="relative flex justify-center items-center h-screen px-8 mt-10">
+        <div class="relative w-[1447px] h-[546px] rounded-[16px] overflow-hidden shadow-xl">
+            
+            <!-- Foreground Video -->
+            <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+                <source src="head_vid.mp4" type="video/mp4">
+            </video>
+
+            <!-- Glassmorphism Overlay (Text Content) -->
+            <div class="absolute inset-0 rounded-full flex flex-col justify-center items-center text-center p-10">
+                <!-- Blurred Background with Drop Shadow -->
+                <div class="relative rounded-lg p-10 blur-[78.3]" style="background-color: rgba(248, 248, 248, 0.1);">
+                    <!-- Non-Blurred Content -->
+                    <div class="relative z-50">
+                        <h1 class="text-3xl md:text-4xl font-bold text-white">Welcome back Christine</h1>
+                        <p class="mt-2 text-lg text-white">Make your Face Radiate and Accentuate your Figure</p>
+                        <div class="mt-4 flex gap-4">
+                            <button class="px-6 py-2 bg-white rounded-lg  transition">View My Dashboard</button>
+                            <button class="px-6 py-2 bg-white text-gray-800 rounded-lg transition">Explore My Collection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+    <!-- Featured Section with Glassmorphism -->
+   <!-- Featured Section with Glassmorphism -->
+<section class="relative py-16 px-4 rounded-xl shadow-lg mt-10 mx-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-1000 ">Curated for You by AI Styling Experts</h2>
+    <p class="text-gray-600 mt-2">Discover insights on your best colors, face shape, and body fit.</p>
+    <div class="flex mt-4">
+        <button class="text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition" style="background-color: rgba(34, 39, 42, 1);">Explore My Full Analysis</button>
+    </div>
+
+    <!-- Cards Grid with Glass Effect -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <!-- Card 1 -->
+        <div style="background-color: rgba(252, 247, 243, 1);" class="w-[420px] h-[228px] rounded-[14px] shadow-md text-gray-800 flex justify-between items-center relative overflow-hidden">
+    
+    <!-- Image Container -->
+    <div class="absolute top-0 left-0 w-[340px] h-[300px]">
+        <img src="images/image 28.png" alt="Hourglass" class="object-cover">
+    </div>
+
+    <!-- Text Content -->
+    <div class="ml-auto bg-black/10 px-8 mr-2 py-3 text-center rounded-[10.97px] backdrop-blur-md flex flex-col justify-center items-center">
+        <h3 class="text-xl text-black font-semibold">Hourglass</h3>
+        <p class="text-black mt-2">Your Body Shape Analysis</p>
+        <button class="my-3 bg-gray-800/80 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition w-full">
+            Click into Dashboard
+        </button>
+    </div>
+</div>
+
+<!-- card 2 -->
+<div style="background-color: rgba(252, 247, 243, 1);" class="w-[420px] h-[228px] rounded-[14px] shadow-md text-gray-800 flex justify-between items-center relative overflow-hidden">
+    
+    <!-- Image Container -->
+    <div class="absolute left-[-10px] top-[0] w-[843px] h-[1174px]" style="rotate: 180 deg; ">
+        <img src="images/image 29.png" alt="Hourglass" class=" object-cover">
+    </div>
+
+    <!-- Text Content -->
+    <div class="ml-auto bg-black/10 px-8 mr-2 py-3 text-center rounded-[10.97px] backdrop-blur-md flex flex-col justify-center items-center">
+        <h3 class="text-xl text-black font-semibold">Oval Round</h3>
+        <p class="text-black mt-2">Your Face Shape Analysis</p>
+        <button class="my-3 bg-gray-800/80 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition w-full">
+            Click into Dashboard
+        </button>
+    </div>
+</div>
+       
+        <!-- Card 3 -->
+        <div style="background-color: rgba(252, 247, 243, 1);" class="w-[420px] h-[228px] rounded-[14px] shadow-md text-gray-800 flex justify-between items-center relative overflow-hidden">
+    
+            <!-- Image Container -->
+            <div class="absolute top-[-9px] left-[-12px] w-[178px] h-[146px]">
+                <img src="images/image 30.png" alt="Hourglass" class="w-full h-auto object-cover">
+            </div>
+        
+            <!-- Text Content -->
+            <div class="ml-auto bg-black/10 px-8 mr-2 py-3 text-center rounded-[10.97px] backdrop-blur-md flex flex-col justify-center items-center">
+                <h3 class="text-xl text-black font-semibold">Cool Summer</h3>
+                <p class="text-black mt-2">Your Seasonal Color Analysis</p>
+                <button class="my-3 bg-gray-800/80 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition w-full">
+                    Click into Dashboard
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+<!-- Scrollable sections -->
+    <div class=" w-auto max-w-full" style="background-color: rgba(252, 247, 243, 1);">
+
+        <div class="px-8 mb-8 lg:mt-[10rem] space-y-3 ">
+            <h4 class="text-2xl md:text-3xl font-bold text-gray-1000 ">Designed by our Team to Accentuate your Figure</h4>
+            <p class="text-gray-600 mt-2">A glimpse into our collection</p>
+            <button class=" text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition" style="background-color: rgba(34, 39, 42, 1);">View Full Collection</button>
+        </div>
+        <div class="relative w-full py-8 px-8 overflow-hidden" >
+        <!-- <div id="scrollable"></div> -->
+        <div id="scrollable-container" class="w-[336px] h-[550px] flex gap-4 overflow-x-auto overflow-y-hidden scroll-smooth w-full">
+            <!-- Images in Scrollable Section -->
+            <div class="relative w-auto h-auto flex-shrink-0">
+                <img src="images/image 6.png" alt="Image 5" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="font-bold">90%</span> Match
+                </button>
+                <div class="flex py-10 justify-between py-4 overflow-x-auto text-lg text-dark-1000 font-medium">
+                    <div>Short dress with Bows</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        
+            <div class="relative  w-auto h-auto flex-shrink-0">
+                <img src="images/image 7.png" alt="Image 6" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="font-bold">85%</span> Match
+                </button>
+                <div class="flex justify-between py-4 text-lg text-dark-1000 font-medium">
+                    <div>Ribbed Godet dress</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        
+            <div class="relative flex-shrink-0">
+                <img src="images/image 10.png" alt="Image 7" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="font-bold">92%</span> Match
+                </button>
+                <div class="flex justify-between py-4 text-lg text-dark-1000 font-medium">
+                    <div>Starpless Midi Dress</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        
+            <div class="relative flex-shrink-0">
+                <img src="images/image 8.png" alt="Image 8" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="fonb-bold"></span>76% Match
+                </button>
+                <div class="flex justify-between py-4 text-lg text-dark-1000 font-medium">
+                    <div>Drapped Midi dress</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- Same Section as previous 2 -->
+
+        <div class="px-8 mb-8 lg:mt-[10rem] space-y-3 ">
+            <h4 class="text-2xl md:text-3xl font-bold text-gray-1000 ">Designed by our Team to Accentuate your Figure</h4>
+            <p class="text-gray-600 mt-2">A glimpse into our collection</p>
+            <button class=" text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition" style="background-color: rgba(34, 39, 42, 1);">View Full Collection</button>
+        </div>
+        <div class="relative w-full max-w-full py-8 px-8 overflow-hidden" >
+        <!-- <div id="scrollable"></div> -->
+        <div id="scrollable-container" class="w-[336px] h-[550px] flex gap-4 overflow-x-auto overflow-y-hidden scroll-smooth w-full">
+            <!-- Images in Scrollable Section -->
+            <div class="relative w-auto h-auto flex-shrink-0">
+                <img src="images/image 9 (1).png" alt="Image 5" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="font-bold">90%</span> Match
+                </button>
+                <div class="flex py-10 justify-between py-4 overflow-x-auto text-lg text-dark-1000 font-medium">
+                    <div>Short dress with Bows</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        
+            <div class="relative  w-auto h-auto flex-shrink-0">
+                <img src="images/image 11 (1).png" alt="Image 6" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="font-bold">85%</span> Match
+                </button>
+                <div class="flex justify-between py-4 text-lg text-dark-1000 font-medium">
+                    <div>Ribbed Godet dress</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        
+            <div class="relative flex-shrink-0">
+                <img src="images/image 12 (1).png" alt="Image 7" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="font-bold">92%</span> Match
+                </button>
+                <div class="flex justify-between py-4 text-lg text-dark-1000 font-medium">
+                    <div>Starpless Midi Dress</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        
+            <div class="relative flex-shrink-0">
+                <img src="images/image 13 (1).png" alt="Image 8" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <button class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md" style="background-color: rgba(255, 255, 255, 0.6);">
+                    <span class="fonb-bold"></span>76% Match
+                </button>
+                <div class="flex justify-between py-4 text-lg text-dark-1000 font-medium">
+                    <div>Drapped Midi dress</div>
+                    <span>$660</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <!-- Blurru bg -->
+        <div class=" mx-20 max-w-screen my-[10rem] h-[744px] rounded-2xl px-10 py-10 border-lg border-gray-300 bg-white">    
+            <div class="animated-gradient relative w-auto h-[448px] mx-auto p-8 rounded-2xl bg-gradient-to-r from-[#DFD2C7] via-[#8E0D16] to-[#FFC8B8] animated-bg shadow-lg" style="background-color: rgb(180, 151, 127);">
+               
+        
+                <!-- Floating Questions -->
+                <div class="relative w-full h-48">
+                    <h2 class="text-white text-2xl pt-20 font-normal text-center">EVENESS GPT</h2>
+                    <h1 class="text-3xl md:text-4xl font-medium text-dark-1000 text-center mt-2">What can I help you with?</h1>
+                    <div style="background-color:rgba(255, 255, 255, 0.8);" class="absolute bottom-20 left-3 backdrop-blur-md bg-opacity-90 text-black font-normal py-2 px-4 rounded-lg shadow-md">
+                        <img src="images/icon.png" alt="">
+                        Does this<br> dress suit me?
+                    </div>
+                    <div style="background-color:rgba(255, 255, 255, 0.8);" class="absolute rounded-xl top-16 right-5 md:top-20 md:right-10 glass-effect p-4 text-gray-900 text-sm shadow-md">
+                        <img src="images/Group 12.png" alt="">
+                        What do I wear with<br> this little black dress?
+                    </div>
+                </div>
+        
+                <!-- Search Box -->
+                 <div class="flex justify-center w-full gap-4 py-10">
+                    <div class=" text-white px-4 py-2 rounded-xl flex  items-center justify-center h-[56px]" style="background-color: rgba(28, 28, 28, 0.6);">
+                        <!-- <button class=""></button> -->
+                       <img src="images/img.png" alt="">
+                 </div>
+                    <div class="flex w-[740px] h-[56px] justify-center items-center rounded-2xl shadow-lg px-4 py-2" style="background-color:rgba(28, 28, 28, 0.6) ;">
+                        <!-- <button class=""></button> -->
+                        <input type="text" id="searchInput" class="flex-1 outline-none bg-transparent text-white px-2 py-1" placeholder="Ask Eveness GPT" >
+                    </div>
+                    <div class=" text-white px-4 py-2 rounded-2xl flex  items-center justify-center h-[56px]" style="background-color: rgba(28, 28, 28, 0.6);">
+                        <!-- <button class=""></button> -->
+                       <img src="images/send.png" alt="">
+                 </div>
+                
+            </div>
+        </div>  
+        <div class="w-full pt-10 flex justify-center items-center">
+            <div class="text-center py-10 leading-10"> <h4 class="text-2xl font-bold">Powered by your Features</h4>
+                <p>Ask ma anything fashion related</p>
+            <button class=" text-white px-6  rounded-lg hover:bg-gray-700 transition" style="background-color: rgba(34, 39, 42, 1);">Open Eveness GPT</button>
+
+            </div>
+           
+
+        
+        </div>
+    </div>
+    <div id="grid"></div>
+    <div id="footer"></div>
+
+
+<script defer>
+    fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('navbar').innerHTML = data;
+});
+
+fetch('grid.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('grid').innerHTML = data;
+});
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer').innerHTML = data;
+});
+
+</script>
+</body>
+</html>
